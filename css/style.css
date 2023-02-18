@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #111111;;
+}
+
+.bodyContent{
+    padding: 35px 42px;
+}
+.header{
+    padding: 38px 51px;
+    border: 2px solid #808080;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.header h2{
+    font-weight: 200;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.mainWrapper{
+    display: flex;
+}
+.mainWrapper .leftContent{
+    width: 30%;
+}
+.mainWrapper .rightContent{
+    width: 70%;
+}
+.profileBox{
+    padding: 30px 0;
+    border: 2px solid #808080;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.profileBox img{
+   width: 190px;
+   height: 190px;
+   border-radius: 50%;
+   margin-bottom: 33px;
+}
+.profileBox p{
+    font-weight: 200;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.detailBox{
+    padding: 35px 25px;
+    border: 2px solid #808080;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.detailBox ul{
+    margin-left: 25px;
+}
+.detailBox li{
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 10px 0;
+    word-wrap: break-word;
+}
+.socialBox{
+    padding: 30px 43px;
+    border: 2px solid #808080;
+    border-radius: 20px;
+}
+.socialBox p{
+    font-weight: 200;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 13px;
+}
+.socialLinks .link{
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
+}
+.socialLinks .link a{
+    display: inline-block;
+    margin-right: 26px;
+}
+
+.socialLinks .link span{
+    font-weight: 200;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #808080;
+}
+.rightContent{
+    padding: 30px 40px;
+    border: 2px solid #808080;
+    border-radius: 20px;
+    margin-left: 37px;
+}
+.rightContent h2{
+    font-weight: 200;
+    font-size: 48px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+table tr th:first-child,
+table tr td:first-child {
+    border-left: 1px solid #808080;
+}
+
+/* top-left border-radius */
+table tr:first-child th:first-child {
+    border-top-left-radius: 20px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child {
+    border-top-right-radius: 20px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+table tr:last-child td {
+    border-bottom: 1px solid #808080;
+}
+
+
+table tr th,table tr td{
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #808080;
+    padding: 20px 25px;
+    text-align: left;
+    border-right: 1px solid #808080;
+}
+table tr th{
+    border-top: solid 1px #808080;
+    border-bottom: 1px solid #808080;
+}
+table tr td input{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+table tr td:nth-child(2){
+    text-align: center;
+}
+
+
+.checkboxWrapper {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkboxWrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: 1px solid #808080;
+    border-radius: 5px;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkboxWrapper input:checked ~ .checkmark {
+    background-color: #002B4E;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkboxWrapper input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkboxWrapper .checkmark:after {
+    left: 10px;
+    top: 8px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
+
+
+  @media screen and (max-width:768px) {
+    .bodyContent{
+        padding: 19px 22px;
+    }
+    .header {
+        padding: 24px 0;
+        text-align: center;
+    }
+    .header h2{
+        font-size: 24px;
+    }
+    .mainWrapper{
+        flex-direction: column;
+    }
+    .mainWrapper .leftContent{
+        width: 100%;
+    }
+    .mainWrapper .rightContent{
+        width: 100%;
+    }
+    .profileBox img{
+        width: 145px;
+        height: 145px;
+        margin-bottom: 26px;
+    }
+    .profileBox p{
+        font-size: 20px;
+    }
+    .detailBox ul{
+        margin-left: 10px;
+    }
+    .detailBox li{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .rightContent{
+        margin-left: 0;
+        padding: 0;
+        margin-top: 30px;
+        border: 0;
+        border-radius: 0;
+    }
+    .rightContent h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    table tr th, table tr td{
+        font-size: 16px;
+        line-height: 19px;
+        padding: 15px 20px;
+    }
+    .checkmark{
+        width: 20px;
+        height: 20px;
+    }
+  }
